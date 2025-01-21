@@ -34,5 +34,5 @@ jobs:
       # Step 5: Run Pytest
       - name: Run Pytest
         env:
-          PYTHONPATH: ./src  # Add the src directory to the Python path
+          PYTHONPATH: ${{ github.workspace }}/src  # Add the src directory to the Python path
         run: pytest tests/
