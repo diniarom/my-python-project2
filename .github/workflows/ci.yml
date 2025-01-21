@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the code
+      # Step 1: Checkout code
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -34,5 +34,5 @@ jobs:
       # Step 5: Run Pytest
       - name: Run Pytest
         env:
-          PYTHONPATH: ${{ github.workspace }}/src  # Add the src directory to the Python path
+          PYTHONPATH: ${{ github.workspace }}  # Add project root to PYTHONPATH
         run: pytest tests/
