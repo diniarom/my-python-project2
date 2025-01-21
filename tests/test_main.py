@@ -1,6 +1,4 @@
-# tests/test_main.py
-
-from src.main import add_numbers
+from src.main import add_numbers  # Importing add_numbers from src/main.py
 
 def test_add_numbers():
     assert add_numbers(2, 3) == 5
